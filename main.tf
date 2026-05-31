@@ -9,7 +9,7 @@ data "azurerm_container_registry" "acr" {
 
 resource "azurerm_container_app_environment" "aca_env" {
   name                = "aca-env-${local.idapp}-${var.environment}"
-  location            = var.location #data.azurerm_resource_group.main.location
+  location            = data.azurerm_resource_group.main.location
   resource_group_name = data.azurerm_resource_group.main.name
 }
 
