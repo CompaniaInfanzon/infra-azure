@@ -7,5 +7,5 @@ variable "environment" {
 variable "location" {
   description = "Región de Azure para el ambiente"
   type        = string
-  default     = "East US"
+  default     = "North Central US"
 }
